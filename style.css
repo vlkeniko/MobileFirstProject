@@ -31,6 +31,51 @@ footer, header, hgroup, menu, nav, section {
 body {
 	line-height: 1;
 }
+.navigation__container{
+    background:#827169;
+    position: sticky;
+    top:0;
+}
+
+.mobileiconlabel{
+    display: inline-block;
+    color: #EBE6E5;
+    background: #827169;
+    font-style: normal;
+    font-size: 1.2rem;
+    padding: 10px;
+}
+
+.menuitem{
+    display: block;
+    width: 100%;
+    padding: 10px;
+    color: #EBE6E5;
+    font-family: 'DM Sans', sans-serif;
+    text-decoration: none;
+    text-align: center;
+}
+
+  /*Hide checkbox and menuitems until clicked*/
+.menuitems__container, 
+.mobileicon{
+    display: none;
+}
+
+  /*Show menuitems when mobileicon-label is clicked*/
+  .navigation__container input:checked ~ .menuitems__container{
+      display: block;
+  }
+
+  /* diplay logo to the right*/
+  .companylogo{
+    position: absolute;
+    color: #EBE6E5;
+    text-decoration: none;
+    top: 12px;
+    right:10px;
+    width: 240px;
+  }
 ol, ul {
 	list-style: none;
 }
