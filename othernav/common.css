@@ -1,0 +1,258 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+    background: #EBE6E5;
+}
+
+.page_header{
+
+  background:#827169;
+  display:flex;
+  justify-content:space-between;
+  font-family: 'DM Sans', sans-serif;
+  
+
+}
+
+
+    .dropbtn {
+      display:block;
+      order: 1;
+      background-color: #827169;
+      color: #EBE6E5;
+      padding: 5px;
+      font-size: 16px;
+      height: 50px;
+      border: none;
+      cursor: pointer;
+      
+      float:left;
+      
+  }
+    
+  .dropdown {
+      position: relative;
+      display: block;
+      float:left;
+      
+  }
+    
+  .dropdown-content {
+      display: none;
+      position: absolute;
+      background:#3F3E3E;
+      opacity: 90%;
+      height:3000%;
+      min-width: 160px;
+      box-shadow: 0px 8px 16px 0px #3F3E3E;
+      z-index: 1;
+      
+  }
+    
+  .dropdown-content a {
+      color: #EBE6E5;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+  }
+    
+  .dropdown-content a:hover {
+      background-color: #A78446
+  }
+    
+  .dropdown:hover .dropdown-content {
+      display: block;
+      position:relative;
+      float:left;
+      display: inline;
+  }
+    
+  .dropdown:hover .dropbtn {
+      background-color: #827169;
+  }
+
+
+  .companylogo{
+    display:block;
+    position: relative;
+    color: #EBE6E5;
+    text-decoration: none;
+    top: 16px;
+    right:10px;
+    width: 300px;
+    color: #EBE6E5;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 1.2rem;
+    float:left;
+    padding-left: 1rem;
+    
+
+  }
+
+
+
+/*.navigation__container{
+    background:#827169;
+    position: sticky;
+    top:0;
+}
+
+.mobileiconlabel{
+    display: inline-block;
+    color: #EBE6E5;
+    background: #827169;
+    font-style: normal;
+    font-size: 1.2rem;
+    padding: 10px;
+}
+
+.menuitem{
+    display: block;
+    width: 100%;
+    padding: 10px;
+    color: #EBE6E5;
+    font-family: 'DM Sans', sans-serif;
+    text-decoration: none;
+    text-align: center;
+}
+
+  /*Hide checkbox and menuitems until clicke
+.menuitems__container, 
+.mobileicon{
+    display: none;
+}
+
+  /*Show menuitems when mobileicon-label is clicked
+  .navigation__container input:checked ~ .menuitems__container{*/
+
+  
+
+
+
+
+
+    /*----------SoMe Images and sections------------*/
+
+
+.some_image{
+  width: 32px;
+  margin-right: 16px;
+  margin-top: 16px;
+  float: left;
+}
+    
+
+h4 {
+  font-weight: bold;
+}
+.page_footer {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 0;
+  width: 100%;
+  height: 15.625rem;
+  background-color: #827169;
+}
+
+.page_footer_address {
+  margin-top: 5px;
+}
+
+@media only screen and (min-width: 37.5rem) {
+
+  .page_footer {
+      flex-direction: row;
+      height: 12.5rem;
+  }
+
+  .page_footer_section {
+      height: 8.75rem;
+  }
+}
+  
+
+address{
+  font-family: 'DM Sans', sans-serif;
+  font-size:0.85em;
+  color:#EBE6E5;
+}
+
+h1{
+  font-family: 'DM Sans', sans-serif;
+  font-size:2em;
+
+}
+
+h4{
+  font-family: 'DM Sans', sans-serif;
+  font-size:1.3em;
+  text-indent: 25px;
+  padding-bottom: 0.5em;
+  padding-top: 0.5em;
+  color:#EBE6E5;
+
+
+}
+
+.tab-label{
+  font-family: 'DM Sans', sans-serif;
+  font-size:1.5em;
+}
+
+li{
+  font-family: 'DM Sans', sans-serif;
+  font-size:0.85em;
+  list-style-type: circle;
+  list-style-position: inside;
+  text-indent: 15px;
+  padding-bottom: 0.5em;
+  padding-top: 0.5em;
+
+}
+
+.maintitle{
+
+  text-align:center;
+  font-size: 2.5em;
+  padding-top: 0.85em;
+  padding-bottom: 0.85em;
+
+}
+
+.companylogo{
+
+  font-family: 'DM Sans', sans-serif;
+  
+}
