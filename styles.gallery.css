@@ -236,4 +236,12 @@ http://stackoverflow.com/a/34696029/383904
 	.Aarhus .Berlin .Ghent .KualaLumpur .Toronto{
 		background-size: cover;
 	}
+	.CSSgal{
+		height:550px;
+		text-align:center;
+	}
+	.CSSgal #h2
+	{
+		margin-top:1050px;
+	}
 }
