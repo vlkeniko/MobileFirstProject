@@ -55,7 +55,7 @@ http://stackoverflow.com/a/34696029/383904
 
 .CSSgal .prevNext {
 	position: absolute;
-	z-index: -1;
+	z-index: 1;
 	top: 50%;
 	width: 100%;
 	height: 0;
@@ -66,7 +66,7 @@ http://stackoverflow.com/a/34696029/383904
 }
 
 .CSSgal .prevNext a {
-	background: #fff;
+	background: #EBE6E5;
 	position: absolute;
 	width: 60px;
 	height: 60px;
@@ -104,37 +104,37 @@ http://stackoverflow.com/a/34696029/383904
 	line-height: 30px;
 	text-decoration: none;
 	text-align: center;
-	background: rgba(255, 255, 255, 1);
+	background: #EBE6E5;
 	-webkit-transition: 0.3s;
 	transition: 0.3s;
 }
 .CSSgal .bullets > a + a {
-	background: rgba(255, 255, 255, 0.5); /* Dim all but first */
+	background: #827169; /* Dim all but first */
 }
 .CSSgal .bullets > a:hover {
-	background: rgba(255, 255, 255, 0.7) !important;
+	background: #827169 !important;
 }
 
 /* NAVIGATION BUTTONS */
 /* ALL: */
 .CSSgal > s:target ~ .bullets > * {
-	background: rgba(255, 255, 255, 0.5);
+	background: #EBE6E5;
 }
 /* ACTIVE */
 #s1:target ~ .bullets > *:nth-child(1) {
-	background: rgba(255, 255, 255, 1);
+	background: #EBE6E5;
 }
 #s2:target ~ .bullets > *:nth-child(2) {
-	background: rgba(255, 255, 255, 1);
+	background: #EBE6E5;
 }
 #s3:target ~ .bullets > *:nth-child(3) {
-	background: rgba(255, 255, 255, 1);
+	background: #EBE6E5;
 }
 #s4:target ~ .bullets > *:nth-child(4) {
-	background: rgba(255, 255, 255, 1);
+	background:#EBE6E5;
 }
 #s5:target ~ .bullets > *:nth-child(5) {
-	background: rgba(255, 255, 255, 1);
+	background: #EBE6E5;
 }
 /* More slides? Add here more rules */
 
@@ -191,7 +191,7 @@ http://stackoverflow.com/a/34696029/383904
    CSSgal CUSTOM STYLES / OVERRIDES HERE: */
 
 .CSSgal {
-	color: #fff;
+	color: #EBE6E5;
 	text-align: center;
 }
 .CSSgal .slider h2 {
@@ -204,7 +204,7 @@ http://stackoverflow.com/a/34696029/383904
 .CSSgal a {
 	border-radius: 50%;
 	margin: 0 3px;
-	color: rgba(0, 0, 0, 0.8);
+	color: #3F3E3E;
 	text-decoration: none;
 }
 
@@ -213,7 +213,7 @@ http://stackoverflow.com/a/34696029/383904
 	position: fixed;
   }
   .Aarhus{
-	  background-image:url(pictures/aarhus.jpg);
+	  background-image:url(pictures/Den-Uendelige-Bro-Aarhus_Dennis-Borup-Jakobsen-1024x536.jpg);
 	  background-size:cover;
   }
   .Berlin{
@@ -235,13 +235,5 @@ http://stackoverflow.com/a/34696029/383904
 @media (min-width: 600px) {
 	.Aarhus .Berlin .Ghent .KualaLumpur .Toronto{
 		background-size: cover;
-	}
-	.CSSgal{
-		height:550px;
-		text-align:center;
-	}
-	.CSSgal #h2
-	{
-		margin-top:1050px;
 	}
 }
