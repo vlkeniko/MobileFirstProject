@@ -26,8 +26,6 @@ input {
 .tabs {
   width:100%;
   border-radius: 8px;
-  overflow: hidden;
-  box-shadow: 0 4px 4px -2px #3F3E3E;
   margin-bottom: 1em ;
 
 }
