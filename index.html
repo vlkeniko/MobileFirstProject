@@ -15,58 +15,81 @@
 
 <body>
     <header>
-        <nav class="navigation__container">
-            <!-- The mobile menu icon -->
-            <label for="mobileicon" class="mobileiconlabel">&#9776</label>
-            <input type="checkbox" id="mobileicon" class="mobileicon">
+        <div id="myNav" class="overlay">
 
-            <!-- Menu items -->
-            <div class="menuitems__container">
+            <!-- Button to close the overlay navigation -->
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+          
+            <!-- Overlay content -->
+            <div class="overlay-content">
                 <a href="index.html" class="menuitem">HOME</a>
                 <a href="courses.html" class="menuitem">COURSES</a>
                 <a href="info.html" class="menuitem">INFO</a>
                 <a href="gallery.html" class="menuitem">GALLERY</a>
                 <a href="https://www.sst.dk/da/corona" class="menuitem">COVID 19</a>
-                <a href="#" class="menuitem">STORIES</a>
+                <a href="https://www.baaa.dk/student-experience/studying-at-the-academy/go-abroad-as-part-of-your-education/student-stories-summer-school/" class="menuitem">STORIES</a>
+        
                 <br>
                 <br>
-                <a href="#" class="menuitem">Language: EN</a>
+                <a href="#" class="menuitem"><div class="int" style="display: inline">INT </div><div class="da" style="display: inline">| DA </div></a>
             </div>
-            <!-- The company logo -->
-            <a href="#" class="companylogo">BUSINESS ACADEMY AAHRHUS</a>
-        </nav>
-    </header>
+          
+          </div>
+          
+          <!-- Use any element to open/show the overlay navigation menu -->
+          <span onclick="openNav()"></span>
+            </header>
+        
+        
+          
+          </div>
+          
+          <!-- Use any element to open/show the overlay navigation menu -->
+          <span class="menu"onclick="openNav()"><img alt="Qries" src="css/pictures/menuicon.png"
+            width="35" height="30"></span>
 
-    <img src="pictures/aarhus.png" alt="aarhus">
+    <main>
 
-
-    <div class="paragraph1">
-        <h3>Why take a Summer School? </h3>
-        <p1>Summer schools are not just fun in the sun. And not everyone can afford to rip six months out of their life
-            - so for those of you that can't,
-            a short mobility summer school is the perfect way to achieve employability skills via mobility.
-            And short mobilities have been proven to enhance your future career possibilities. Therefore, we have
-            developed opportunities to study abroad at a summer school.
-            This is also relatively cheap compared to going abroad for a semester.<br>
-        </p1>
-        <br>
-        <div class="btn" id="Read-more">
-            <u> Read more > </u>
-            </a>
+        <div class="cover">
+            <img src="css/pictures/aarhus.jpg" alt="aarhus">
+            
         </div>
 
+        <div class=firstbox>
+            <div class="paragraph1">
+                <h3 class="h3">Why take a Summer School? </h3>
+                <p1 class="asd">Summer schools are not just fun in the sun. And not everyone can afford to rip six
+                    months
+                    out of their life
+                    - so for those of you that can't,
+                    a short mobility summer school is the perfect way to achieve employability skills via mobility.
+                    And short mobilities have been proven to enhance your future career possibilities. Therefore, we
+                    have
+                    developed opportunities to study abroad at a summer school.
+                    This is also relatively cheap compared to going abroad for a semester.<br>
+                </p1>
+                <br>
+                <div class="btn" id="Read-more">
+                    <u> Read more > </u>
+                    </a>
+                </div>
+            </div>
 
-        <div class="paragraph2">
-            <h3>Student's story: Adriana tells about the summer school 'Doing business in Malaysia' </h3>
-            <iframe width=100% height="315" src="https://www.youtube.com/embed/OIohX7p-EJQ" title="YouTube video player"
-                frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen>
-            </iframe>
         </div>
 
-
-<!--------------------Footer---------------------------------------------->
+        <div class="secondbox">
+            <div class="paragraph2">
+                <h3>Student's stories: Adriana on 'Doing business in Malaysia' </h3>
+                <br>
+                <iframe width=100% height="315" src="https://www.youtube.com/embed/OIohX7p-EJQ"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen>
+                </iframe>
+            </div>
+        </div>
+    </main>
+    <!--------------------Footer---------------------------------------------->
     <footer class="page_footer">
         <section class="page_foooter_section" id="contact">
             <h4>Get In Touch</h4>
@@ -82,10 +105,21 @@
 
         <section class="page_foooter_section">
             <h4>Follow us</h4>
-            <a href="http://twitter.com"><img src="pictures/twitter_logo.png" class="some_image"></a>
-            <a href="http://instagram.com"><img src="pictures/instagram_logo.png" class="some_image"></a>
-            <a href="http://facebook.com"><img src="pictures/facebook_logo.png" class="some_image"></a>
+            <a href="http://twitter.com"><img src="css/pictures/twitter_logo.png" class="some_image"></a>
+            <a href="http://instagram.com"><img src="css/pictures/instagram_logo.png" class="some_image"></a>
+            <a href="http://facebook.com"><img src="css/pictures/facebook_logo.png" class="some_image"></a>
         </section>
     </footer>
+
+    <script>
+        function openNav() {
+          document.getElementById("myNav").style.height = "100%";
+        }
+        
+        function closeNav() {
+          document.getElementById("myNav").style.height = "0%";
+        }
+        </script>  
 </body>
+
 </html>

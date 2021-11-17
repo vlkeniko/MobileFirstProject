@@ -33,10 +33,90 @@ body {
     background: #EBE6E5;
 
 }
+
+
+
+
+.overlay {
+  height: 0%;
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #EBE6E5;
+  
+  overflow-y: hidden;
+  transition: 0.5s;
+}
+
+.overlay-content {
+  position: relative;
+  top: 12%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #3F3E3E;
+  display: block;
+  transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+  color: #f1f1f1;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+ left: 45px;
+  font-size: 60px;
+}
+
+.menu{
+
+  position: absolute;
+  top: 20px;
+ left: 45px;
+  font-size: 60px;
+}
+
+.menuitem{
+
+  margin: 2% 0;
+}
+
+@media screen and (max-height: 450px) {
+  .overlay {overflow-y: auto;}
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+  font-size: 40px;
+  top: 15px;
+  right: 35px;
+  }
+}
+
+.int{
+
+  color:#827169;
+}
+
+
+
+
+
+
+
 .navigation__container{
-    background:#827169;
-    position: sticky;
+  background-color: #827169;
+  position: sticky;
     top:0;
+  
 }
 
 .mobileiconlabel{
@@ -50,9 +130,10 @@ body {
 
 .menuitem{
     display: block;
+    
     width: 100%;
     padding: 10px;
-    color: #EBE6E5;
+    color: #ffffff;
     font-family: 'DM Sans', sans-serif;
     text-decoration: none;
     text-align: center;
@@ -66,7 +147,10 @@ body {
 
   /*Show menuitems when mobileicon-label is clicked*/
   .navigation__container input:checked ~ .menuitems__container{
-      display: block;
+      display:block;
+      
+      padding-bottom: 100%;
+      background:#EBE6E5;
   }
 
   /* diplay logo to the right*/

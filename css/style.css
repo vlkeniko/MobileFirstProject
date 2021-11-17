@@ -49,16 +49,7 @@ table {
 	border-spacing: 0;
 }
 
-@font-face{
 
-  font-family: myfirstfont;
-  src: url(font/DMsans-Regular.ttf)ű
-
-  
-}
-
-*{font-family:myFirstfont;
-}
 /* CSS Starts here */
 
 .rectangle {
@@ -69,7 +60,7 @@ table {
     
   }
 
-  @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@700&display=swap');
+  
 
 body {
   font-family: 'DM Sans', sans-serif;
@@ -81,7 +72,7 @@ body {
 
 h1 {
   font-weight: 400;
-  text-transform: uppercase;
+  
   color:#EBE6E5;
   
 }
@@ -104,21 +95,52 @@ img {
 
 .paragraph1
 {
-    background-color: #EBE6E5;
+    
+
     width:100%;
     margin-top: 15px;
     margin-bottom:15px;
     padding-bottom:10px;
+    font-family: 'DM Sans', sans-serif;
+    text-align: justify;
+    color:#3F3E3E;
 }
 
+.firstbox{
+  display:block;
+  background:#bab7b7;
+  width: 72%;
+  margin-left:10%;
+  margin-right:10%;
+  margin-top: 2rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 0.5rem;
+  padding-bottom: 1rem;
+  
+
+}
+
+.secondbox{
+  display:block;
+  background:#bab7b7;
+  width: 79%;
+  margin-left:10%;
+  margin-right:10%;
+  margin-top: 2rem;
+
+  padding-top: 0.5rem;
+ 
+
+}
 .paragraph2
 {
-    background-color: #EBE6E5 ;
+    background-color: #bab7b7 ;
     width:100%;
     margin-top: 15px;
     margin-bottom:15px;
     font-family: 'DM Sans', sans-serif;
-    
+    color:#3F3E3E;
 }
 
 #header {
@@ -139,11 +161,29 @@ img {
 }
 
 
+.h3{
+  font-family: 'DM Sans', sans-serif;
+  font-size:1.2rem;
+  padding-bottom: 1rem;
+  background: #bab7b7;
+
+}
 
 
 
+.cover {
+  text-align: right;
+  color: #EBE6E5;
+  font-size: 0.6rem;
+}
 
-
+.centered {
+  background: #3F3E3E;
+  opacity: 90%;
+  top: 300px;
+  padding: 2%;
+  width:100%;
+}
 
 
 

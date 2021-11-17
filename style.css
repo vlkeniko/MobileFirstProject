@@ -58,7 +58,6 @@ table {
     
   }
 
-  @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@700&display=swap');
 
 body {
   font-family: 'DM Sans', sans-serif;
@@ -126,7 +125,21 @@ img {
 }
 
 
+.cover {
+  position: relative;
+  text-align: center;
+  color: white;
 
+}
+
+.centered {
+  position: absolute;
+  background: #3F3E3E;
+  opacity: 90%;
+  top: 90%;
+  left: 60%;
+  transform: translate(-50%, -50%);
+}
 
 
 
