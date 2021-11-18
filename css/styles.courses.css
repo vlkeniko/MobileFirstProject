@@ -1,6 +1,7 @@
 @charset "UTF-8";
+
 body {
-  color:#3F3E3E;
+  color: #3F3E3E;
   background: #EBE6E5;
   padding: 0 1em 1em;
 }
@@ -13,42 +14,46 @@ input {
 }
 
 .row {
-  width:100%;
+  width: 100%;
   display: flex;
 }
+
 .row .col {
-  width:100%;
+  width: 100%;
   flex: 1;
 }
 
 
 /* Accordion styles */
 .tabs {
-  width:100%;
+  width: 100%;
   border-radius: 8px;
-  margin-bottom: 1em ;
+  margin-bottom: 1em;
 
 }
 
 .tab {
   width: 100%;
-  color:#EBE6E5;
+  color: #EBE6E5;
   overflow: hidden;
-  margin-bottom: 1em ;
+  margin-bottom: 1em;
 }
+
 .tab-label {
-  width:100%;
+  width: 100%;
   display: flex;
-  justify-content:space-between;
+  justify-content: space-between;
   padding: 1em;
   background: #3F3E3E;
   font-weight: bold;
   cursor: pointer;
   /* Icon */
 }
+
 .tab-label:hover {
   background: #A78446;
 }
+
 .tab-label::after {
   content: "❯";
   width: 1em;
@@ -56,76 +61,81 @@ input {
   text-align: right;
   transition: all 0.35s;
 }
+
 .tab-content {
-  max-width:100%;
+  max-width: 100%;
   max-height: 0;
   padding: 0 1em;
   color: #EBE6E5;
-  background:#858383;
+  background: #858383;
   transition: all 0.35s;
-  
+
 }
+
 .tab-close {
   display: flex;
-  width:100%;
+  width: 100%;
   justify-content: flex-end;
   padding: 1em;
   font-size: 0.75em;
   background: #696868;
   cursor: pointer;
 }
+
 .tab-close:hover {
   background: #3F3E3E;
 }
 
-input:checked + .tab-label {
+input:checked+.tab-label {
   background: #3F3E3E;
 }
-input:checked + .tab-label::after {
+
+input:checked+.tab-label::after {
   transform: rotate(90deg);
 }
-input:checked ~ .tab-content {
+
+input:checked~.tab-content {
   max-height: 200vh;
   padding: 1em;
 }
-.menuitem{
-  width:100%;
+
+.menuitem {
+  width: 100%;
 }
 
 
 /*--------------Text-image-video styling---------------*/
 
-p{
+p {
   font-family: 'DM Sans', sans-serif;
-  font-size:0.85em;
+  font-size: 0.85em;
   line-height: 30px;
 }
 
-h1{
+h1 {
   font-family: 'DM Sans', sans-serif;
-  font-size:2em;
-  
+  font-size: 2em;
+
 
 }
 
-h2{
+h2 {
   font-family: 'DM Sans', sans-serif;
-  font-size:1em;
+  font-size: 1em;
   text-decoration: underline;
   padding-bottom: 0.5em;
   padding-top: 0.5em;
-  padding-left:1%
-
+  padding-left: 1%
 }
 
-.tab-label{
+.tab-label {
   font-family: 'DM Sans', sans-serif;
-  font-size:1.5em;
+  font-size: 1.5em;
 }
 
-li{
+li {
   font-family: 'DM Sans', sans-serif;
-  font-size:0.85em;
+  font-size: 0.85em;
   list-style-type: circle;
   list-style-position: inside;
   text-indent: 15px;
@@ -133,4 +143,3 @@ li{
   padding-top: 0.5em;
 
 }
-

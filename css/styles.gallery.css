@@ -2,23 +2,26 @@
 	box-sizing: border-box;
 	-webkit-box-sizing: border-box;
 }
+
 html,
 body {
 	height: 100%;
 }
+
 body {
 	margin: 0;
 	font: 16px/1.3 sans-serif;
 }
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@700&display=swap');
+
 
 body {
-  font-family: 'DM Sans', sans-serif;
-  font-size: 12px;
-  margin: 0;
-  background: #eee;
-  height: auto;
+	font-family: 'DM Sans', sans-serif;
+	font-size: 12px;
+	margin: 0;
+	background: #eee;
+	height: auto;
 }
+
 /*
 PURE RESPONSIVE CSS3 SLIDESHOW GALLERY by Roko C. buljan
 http://stackoverflow.com/a/34696029/383904
@@ -27,7 +30,8 @@ http://stackoverflow.com/a/34696029/383904
 .CSSgal {
 	position: relative;
 	overflow: hidden;
-	height: 100%; /* Or set a fixed height */
+	height: 100%;
+	/* Or set a fixed height */
 }
 
 /* SLIDER */
@@ -41,14 +45,14 @@ http://stackoverflow.com/a/34696029/383904
 
 /* SLIDES */
 
-.CSSgal .slider > * {
+.CSSgal .slider>* {
 	font-size: 1rem;
 	display: inline-block;
 	white-space: normal;
 	vertical-align: top;
 	height: 100%;
 	width: 100%;
-	
+
 }
 
 /* PREV/NEXT, CONTAINERS & ANCHORS */
@@ -61,8 +65,9 @@ http://stackoverflow.com/a/34696029/383904
 	height: 0;
 }
 
-.CSSgal .prevNext > div + div {
-	visibility: hidden; /* Hide all but first P/N container */
+.CSSgal .prevNext>div+div {
+	visibility: hidden;
+	/* Hide all but first P/N container */
 }
 
 .CSSgal .prevNext a {
@@ -70,7 +75,8 @@ http://stackoverflow.com/a/34696029/383904
 	position: absolute;
 	width: 60px;
 	height: 60px;
-	line-height: 60px; /* If you want to place numbers */
+	line-height: 60px;
+	/* If you want to place numbers */
 	text-align: center;
 	opacity: 0.7;
 	-webkit-transition: 0.3s;
@@ -79,10 +85,12 @@ http://stackoverflow.com/a/34696029/383904
 	transform: translateY(-50%);
 	left: 0;
 }
+
 .CSSgal .prevNext a:hover {
 	opacity: 1;
 }
-.CSSgal .prevNext a + a {
+
+.CSSgal .prevNext a+a {
 	left: auto;
 	right: 0;
 }
@@ -97,7 +105,8 @@ http://stackoverflow.com/a/34696029/383904
 	width: 100%;
 	text-align: center;
 }
-.CSSgal .bullets > a {
+
+.CSSgal .bullets>a {
 	display: inline-block;
 	width: 30px;
 	height: 30px;
@@ -108,81 +117,101 @@ http://stackoverflow.com/a/34696029/383904
 	-webkit-transition: 0.3s;
 	transition: 0.3s;
 }
-.CSSgal .bullets > a + a {
-	background: #827169; /* Dim all but first */
+
+.CSSgal .bullets>a+a {
+	background: #827169;
+	/* Dim all but first */
 }
-.CSSgal .bullets > a:hover {
+
+.CSSgal .bullets>a:hover {
 	background: #827169 !important;
 }
 
 /* NAVIGATION BUTTONS */
 /* ALL: */
-.CSSgal > s:target ~ .bullets > * {
+.CSSgal>s:target~.bullets>* {
 	background: #EBE6E5;
 }
+
 /* ACTIVE */
-#s1:target ~ .bullets > *:nth-child(1) {
+#s1:target~.bullets>*:nth-child(1) {
 	background: #EBE6E5;
 }
-#s2:target ~ .bullets > *:nth-child(2) {
+
+#s2:target~.bullets>*:nth-child(2) {
 	background: #EBE6E5;
 }
-#s3:target ~ .bullets > *:nth-child(3) {
+
+#s3:target~.bullets>*:nth-child(3) {
 	background: #EBE6E5;
 }
-#s4:target ~ .bullets > *:nth-child(4) {
-	background:#EBE6E5;
-}
-#s5:target ~ .bullets > *:nth-child(5) {
+
+#s4:target~.bullets>*:nth-child(4) {
 	background: #EBE6E5;
 }
+
+#s5:target~.bullets>*:nth-child(5) {
+	background: #EBE6E5;
+}
+
 /* More slides? Add here more rules */
 
 /* PREV/NEXT CONTAINERS VISIBILITY */
 /* ALL: */
-.CSSgal > s:target ~ .prevNext > * {
+.CSSgal>s:target~.prevNext>* {
 	visibility: hidden;
 }
+
 /* ACTIVE: */
-#s1:target ~ .prevNext > *:nth-child(1) {
+#s1:target~.prevNext>*:nth-child(1) {
 	visibility: visible;
 }
-#s2:target ~ .prevNext > *:nth-child(2) {
+
+#s2:target~.prevNext>*:nth-child(2) {
 	visibility: visible;
 }
-#s3:target ~ .prevNext > *:nth-child(3) {
+
+#s3:target~.prevNext>*:nth-child(3) {
 	visibility: visible;
 }
-#s4:target ~ .prevNext > *:nth-child(4) {
+
+#s4:target~.prevNext>*:nth-child(4) {
 	visibility: visible;
 }
-#s5:target ~ .prevNext > *:nth-child(5) {
+
+#s5:target~.prevNext>*:nth-child(5) {
 	visibility: visible;
 }
+
 /* More slides? Add here more rules */
 
 /* SLIDER ANIMATION POSITIONS */
 
-#s1:target ~ .slider {
+#s1:target~.slider {
 	transform: translateX(0%);
 	-webkit-transform: translateX(0%);
 }
-#s2:target ~ .slider {
+
+#s2:target~.slider {
 	transform: translateX(-100%);
 	-webkit-transform: translateX(-100%);
 }
-#s3:target ~ .slider {
+
+#s3:target~.slider {
 	transform: translateX(-200%);
 	-webkit-transform: translateX(-200%);
 }
-#s4:target ~ .slider {
+
+#s4:target~.slider {
 	transform: translateX(-300%);
 	-webkit-transform: translateX(-300%);
 }
-#s5:target ~ .slider {
+
+#s5:target~.slider {
 	transform: translateX(-400%);
 	-webkit-transform: translateX(-400%);
 }
+
 /* More slides? Add here more rules */
 
 /* YOU'RE THE DESIGNER! 
@@ -194,6 +223,7 @@ http://stackoverflow.com/a/34696029/383904
 	color: #EBE6E5;
 	text-align: center;
 }
+
 .CSSgal .slider h2 {
 	margin-top: 40vh;
 	font-weight: 200;
@@ -201,6 +231,7 @@ http://stackoverflow.com/a/34696029/383904
 	word-spacing: 0.2em;
 	font-size: 3em;
 }
+
 .CSSgal a {
 	border-radius: 50%;
 	margin: 0 3px;
@@ -209,31 +240,37 @@ http://stackoverflow.com/a/34696029/383904
 }
 
 
-.page_footer{
-	position: fixed;
-  }
-  .Aarhus{
-	  background-image:url(pictures/aarhus2.jpg);
-	  background-size:cover;
-  }
-  .Berlin{
-	background-image:url(pictures/berlin.jpg);
-	background-size:cover;
+.page_footer {
+	position: relative;
 }
-.Ghent{
-	background-image:url(pictures/ghent.jpg);
-	background-size:cover;
+
+.Aarhus {
+	background-image: url(pictures/aarhus2.jpg);
+	background-size: cover;
 }
-.KualaLumpur{
-	background-image:url(pictures/kuala.jpg);
-	background-size:cover;
+
+.Berlin {
+	background-image: url(pictures/berlin.jpg);
+	background-size: cover;
 }
-.Toronto{
-	background-image:url(pictures/toronto.jpg);
-	background-size:cover;
+
+.Ghent {
+	background-image: url(pictures/ghent.jpg);
+	background-size: cover;
 }
+
+.KualaLumpur {
+	background-image: url(pictures/kuala.jpg);
+	background-size: cover;
+}
+
+.Toronto {
+	background-image: url(pictures/toronto.jpg);
+	background-size: cover;
+}
+
 @media (min-width: 600px) {
-	.Aarhus .Berlin .Ghent .KualaLumpur .Toronto{
+	.Aarhus .Berlin .Ghent .KualaLumpur .Toronto {
 		background-size: cover;
 	}
 }
