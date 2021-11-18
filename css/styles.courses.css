@@ -16,6 +16,7 @@ input {
 .row {
   width: 100%;
   display: flex;
+  
 }
 
 .row .col {
