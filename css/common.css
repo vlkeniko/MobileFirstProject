@@ -55,7 +55,7 @@ body {
 
 .overlay-content {
   position: relative;
-  top: 12%;
+  top: 10%;
   width: 100%;
   text-align: center;
   margin-top: 30px;
@@ -71,7 +71,7 @@ body {
 }
 
 .overlay a:hover, .overlay a:focus {
-  color: #f1f1f1;
+  color: #A78446;
 }
 
 .overlay .closebtn {
@@ -87,6 +87,7 @@ body {
   top: 20px;
   left: 45px;
   font-size: 60px;
+  color: #A78446;
 }
 
 .menuitem {
@@ -115,7 +116,9 @@ body {
   color: #827169;
 }
 
-
+.menuicon{
+  color: #A78446;
+}
 
 .button {
   background-color: #827169;
@@ -192,20 +195,25 @@ body {
 .video {
 
 
-  width:100%;
-  height:315px;
+  width: 100%;
+  height: 315px;
+  padding-bottom: 2.5rem;
 
 }
 
 
 /*----------SoMe Images and sections------------*/
+.intouch {
 
+  padding-top: 3rem;
+}
 
 .some_image {
   width: 32px;
   margin-right: 16px;
   margin-top: 16px;
   float: left;
+  padding-bottom: 2rem;
 }
 
 
@@ -221,8 +229,10 @@ h4 {
   align-items: center;
   margin-bottom: 0;
   width: 100%;
-  height: 15.625rem;
+  height: 18rem;
   background-color: #827169;
+  
+
 }
 
 .page_footer_address {
@@ -238,6 +248,7 @@ h4 {
 
   .page_footer_section {
     height: 8.75rem;
+    width: 100%;
   }
 }
 

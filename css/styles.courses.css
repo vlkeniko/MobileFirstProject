@@ -3,7 +3,7 @@
 body {
   color: #3F3E3E;
   background: #EBE6E5;
-  padding: 0 1em 1em;
+
 }
 
 
@@ -14,9 +14,9 @@ input {
 }
 
 .row {
-  width: 100%;
+  width: 96%;
   display: flex;
-  
+  padding: 0 2%;
 }
 
 .row .col {
@@ -67,9 +67,13 @@ input {
   max-width: 100%;
   max-height: 0;
   padding: 0 1em;
-  color: #EBE6E5;
-  background: #858383;
+  color: #3F3E3E;
+  background: #EBE6E5;
   transition: all 0.35s;
+  font-size: 1.6em;
+  line-height: 1.6em;
+
+
 
 }
 
@@ -96,7 +100,7 @@ input:checked+.tab-label::after {
 }
 
 input:checked~.tab-content {
-  max-height: 200vh;
+  max-height: 3000vh;
   padding: 1em;
 }
 
@@ -109,8 +113,9 @@ input:checked~.tab-content {
 
 p {
   font-family: 'DM Sans', sans-serif;
-  font-size: 0.85em;
-  line-height: 30px;
+  font-size: 0.8em;
+  line-height: 1.6em;
+  text-align: justify;
 }
 
 h1 {
@@ -139,8 +144,6 @@ li {
   font-size: 0.85em;
   list-style-type: circle;
   list-style-position: inside;
-  text-indent: 15px;
-  padding-bottom: 0.5em;
   padding-top: 0.5em;
 
 }
